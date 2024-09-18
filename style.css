@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.slider-main-body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.slider-pic1,.slider-pic2,.slider-pic3,.slider-pic4{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    opacity: 0;
+}
+.slider-pic1 img,.slider-pic2 img,
+.slider-pic3 img,.slider-pic4 img{
+    width: 100%;
+    height: 100%;
+}
+.active{
+   opacity: 1;
+}
+.btnContiner{
+    width: 96%;
+    height: 60px;
+    background: rgba(255, 0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.leftbtn,.rightbtn{
+    height: 100%;
+    width: 60px;
+    background: rgba(233, 232, 232, 0.226);
+    border-radius: 50%;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+.leftbtn:hover,.rightbtn:hover{
+    background: rgba(0, 0, 0, 0.589);
+    border: 1px solid rgb(212, 219, 212);
+}
+.leftbtn span,.rightbtn span{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    transform: translate(0%,-50%);
+}
+.leftbtn span{
+    top: 43%;
+    left: 35%; 
+    border-left: 1px solid rgb(212, 219, 212);
+    border-bottom: 1px solid rgb(216, 224, 216);
+} 
+.rightbtn span{
+    top: 55%;
+    left: 24%;
+    border-right: 1px solid rgb(218, 226, 218);
+    border-top: 1px solid rgb(210, 219, 210);
+}
